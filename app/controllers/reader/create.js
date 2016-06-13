@@ -7,5 +7,7 @@ angular.module('com.ngnice.app')
     function ($scope) {
         var vm = this;
         vm.name = "World";
+        console.log(vm.name);
+
     }
 );
