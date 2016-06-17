@@ -6,11 +6,7 @@ angular.module("com.ngnice.app").directive('bfFieldError', function bfFieldError
         restrict: 'A',
         require: 'ngModel',
         link: function(scope, element, attrs, ngModel){
-            console.log(new Date());
-            console.log(ngModel);
             var subScope = scope.$new(true);
-            console.log(scope);
-            console.log(subScope);
             subScope.hasError = function(){
                 return ngModel.$invalid && ngModel.$dirty;
             };
